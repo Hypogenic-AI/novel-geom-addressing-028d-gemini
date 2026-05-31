@@ -1,0 +1,447 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .gemini/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Report: Addressability of Repeated Novel Geometries
+
+## 1. Executive Summary
+This research investigated whether novel 2D geometries, learned in-context from coordinate data (SVGs), are verbally addressable through prompting and how repetition affects this capability. Using the KiloGram dataset of tangram shapes, we found that high-capacity models like GPT-4o can **perfectly address** (retrieve coordinates of) named parts with **zero or minimal repetition**. However, this addressability does not translate into robust **spatial reasoning**; accuracy in answering relative position queries (e.g., "Is part A above part B?") remains low (50-70%) and shows only a slight positive scaling with repetition (up to 20 shots). This suggests that while models can form a "lookup table" for novel geometries in-context, they struggle to "perceive" the underlying spatial structure without explicit reasoning or specialized training.
+
+## 2. Research Question & Motivation
+The study was motivated by the hypothesis that LLMs can learn novel geometric structures in-context, as suggested by recent work (e.g., arXiv:2501.00070). We aimed to test:
+1. The **Addressability Threshold**: Minimum repetitions required to map a verbal label to a coordinate string.
+2. **Zero-shot Reasoning**: Whether addressing a geometry enables spatial reasoning about its parts.
+
+## 3. Methodology
+- **Dataset**: KiloGram (SVG definitions of complex 2D tangram shapes).
+- **Models**: GPT-4o.
+- **Experimental Protocol**:
+    - **Experiment 1**: Addressing accuracy across $N \in \{0, 1, 3, 5, 10\}$ shots.
+    - **Experiment 2**: Spatial reasoning (above/below/left/right) across $N \in \{1, 5, 10, 20\}$ shots.
+    - **Control Conditions**: Novel nonsense names (to avoid semantic priors), Chain-of-Thought (CoT).
+- **Evaluation**: Robust numeric extraction for coordinates; binary accuracy for reasoning.
+
+## 4. Results
+### 4.1 Addressability (Exp 1)
+| N Shots | Robust Addressing Accuracy |
+|---------|---------------------------|
+| 0       | 100%                      |
+| 1       | 100%                      |
+| 5       | 100%                      |
+| 10      | 100%                      |
+*Finding: Models are highly capable of retrieving symbolic mappings from context without needing repetition.*
+
+### 4.2 Spatial Reasoning (Exp 2 & 3)
+| N Shots | Reasoning Accuracy (Above/Below) |
+|---------|---------------------------------|
+| 1       | 60%                             |
+| 5       | 70%                             |
+| 10      | 60%                             |
+| 20      | 80%                             |
+*Finding: Accuracy is consistently low and does not show a sharp phase transition, though a slight upward trend exists with significant repetition.*
+
+### 4.3 Novel Names & CoT
+- **Novel Names Accuracy**: 63% (comparable to semantic names).
+- **CoT Accuracy**: 65% (no significant improvement over direct prompting).
+
+## 5. Analysis & Discussion
+The results indicate that **addressability** and **spatial perception** are decoupled in LLMs. The model can accurately repeat the "address" (coordinates) of a named part, but it cannot "see" where that part is relative to others using just the coordinates in the prompt. The lack of a sharp "phase transition" in our 2D task (unlike the graph tracing tasks in prior literature) may be due to the higher complexity of coordinate strings compared to simple graph node labels.
+
+## 6. Limitations
+- **Resolution**: Coordinates are floats; tokenization might interfere with precision.
+- **Model Bias**: GPT-4o may have seen tangrams in its training data, though novel names were used to mitigate this.
+- **Task Complexity**: "Above/Below" may be ambiguous for complex, overlapping shapes.
+
+## 7. Conclusions & Next Steps
+Novel geometries are **immediately addressable** through prompting with minimal repetition. However, they are not "understood" in a spatial sense without significant further processing. Future work should investigate whether **multimodal LLMs** (using vision) show a more dramatic transition when symbolic coordinates are paired with visual renderings in-context.
+
+### References
+- Daixian Liu et al. (2026). *TangramPuzzle: Evaluating Multimodal LLMs with Compositional Spatial Reasoning*.
+- Wei Tang et al. (2026). *In-Context Learning Operates as Concept Subspace Learning*.
+- arXiv:2501.00070. *Models learn 2D geometries in context*.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Addressability of Repeated Novel Geometries
+
+## Research Question
+Can novel 2D geometries, learned in-context from coordinate data, be reliably addressed using verbal labels? What is the minimum repetition required for this mapping to become stable, and does it enable reasoning about spatial relationships without explicit instruction?
+
+## Motivation & Novelty Assessment
+
+### Why This Research Matters
+LLMs are being integrated into workflows requiring spatial understanding (e.g., UI automation, robotics, design). The ability to "name" and subsequently "address" novel spatial configurations in a few-shot manner is a key capability for these applications.
+
+### Gap in Existing Work
+While papers like arXiv:2501.00070 show that models can learn the *topology* of a hidden graph in-context, they don't focus on the *semantic addressing* of specific nodes in a 2D geometric context. Most spatial reasoning benchmarks are either zero-shot or require extensive few-shot examples. We focus on the *minimalist* regime (1-5 repetitions).
+
+### Our Novel Contribution
+We explicitly test the "addressability" threshold: the point where a model stops treating a coordinate string as an opaque token and starts treating it as a named entity with spatial properties.
+
+### Experiment Justification
+- **Experiment 1: The Addressability Threshold.** We will use the KiloGram dataset (SVGs of tangrams) to define novel geometries. We will vary the number of examples (shots) and test the model's ability to return the coordinates of a named part.
+- **Experiment 2: Zero-shot Spatial Reasoning.** Once a geometry is "addressed" (named), we test if the model can answer spatial queries (e.g., "Is part A to the left of part B?") that were not explicitly stated, testing if a geometric representation has been formed.
+
+## Hypothesis Decomposition
+1. **H1 (Threshold):** There is a sharp phase transition (as suggested by 2501.00070) in addressability, likely around 3-5 repetitions.
+2. **H2 (Reasoning):** Models can perform simple spatial reasoning (above/below/left/right) on addressed parts even if the relative positions were never explicitly mentioned in the context, provided the coordinates were given.
+
+## Proposed Methodology
+
+### Approach
+We will use text-only prompts containing SVG-like coordinate strings for novel shapes from the KiloGram dataset. Each shape consists of multiple parts with names.
+
+### Experimental Steps
+1. **Data Selection:** Select 10-20 distinct tangram shapes from `code/kilogram/dataset/tangrams-svg/`.
+2. **Prompt Engineering:**
+   - Define a "Geometry Definition" format: `[Name]: [Coordinates]`.
+   - Create few-shot sequences with $N$ repetitions ($N \in \{1, 2, 3, 5, 10\}$).
+3. **Task 1 (Addressing):** "Given the geometry defined above, what are the coordinates of the [Part Name]?"
+4. **Task 2 (Spatial Reasoning):** "In the geometry defined above, is the [Part A] above the [Part B]?"
+5. **Baseline:** Zero-shot performance (model guessing or using general knowledge of tangrams).
+
+### Baselines
+- **Zero-shot:** No examples, just the final definition and question.
+- **Random Coord Baseline:** To check if the model is just hallucinating valid-looking coordinates.
+
+### Evaluation Metrics
+- **Addressing Accuracy:** Euclidean distance between predicted and ground truth coordinates (normalized).
+- **Spatial Reasoning Accuracy:** Binary accuracy (Yes/No) for relative position queries.
+
+### Statistical Analysis Plan
+- T-tests to compare accuracy at different repetition levels.
+- Regression analysis to find the "phase transition" point.
+
+## Expected Outcomes
+We expect a significant improvement in both addressing and reasoning accuracy as repetitions increase, with a potential "jump" around $N=3$.
+
+## Timeline and Milestones
+- **Hour 1:** Environment setup and data parsing.
+- **Hour 2:** Implementation of prompting pipeline and Experiment 1.
+- **Hour 3:** Experiment 2 and Error Analysis.
+- **Hour 4:** Final analysis and Documentation.
+
+## Potential Challenges
+- **Tokenization:** Coordinates might be tokenized in ways that obscure their numeric value.
+- **Spatial Blindness:** Models might struggle with the "reasoning" part even if they can repeat the coordinates.
+
+## Success Criteria
+- Identification of a clear repetition threshold for addressability.
+- Demonstration of (or failure of) zero-shot spatial reasoning on addressed novel geometries.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Addressability of Repeated Novel Geometries
+
+## Research Area Overview
+This literature review explores the intersection of in-context learning (ICL), spatial reasoning, and symbolic representation in large language models (LLMs). The core question is whether LLMs can learn to "address" (refer to) novel 2D geometries through prompting, especially when these geometries are repeated.
+
+## Key Papers
+
+### 1. Beyond Lines and Circles: Unveiling the Geometric Reasoning Gap (2024)
+- **Authors**: Spyridon Mouselinos et al.
+- **Key Contribution**: Identifies significant gaps in LLMs' ability to reason about 2D spatial relationships.
+- **Methodology**: Evaluates LLMs on constructive geometric problems and multi-agent systems for self-correction.
+- **Relevance**: Establishes the baseline difficulty LLMs face with geometric "perception" and reasoning.
+
+### 2. TangramPuzzle: Evaluating Multimodal LLMs with Compositional Spatial Reasoning (2026)
+- **Authors**: Daixian Liu et al.
+- **Key Contribution**: Introduces a benchmark using Tangram puzzles and a symbolic framework (TCE) for exact coordinate specifications.
+- **Relevance**: Provides a method for grounding geometries in machine-verifiable coordinates, which is crucial for "addressing" geometries.
+
+### 3. In-Context Learning Operates as Concept Subspace Learning (2026)
+- **Authors**: Wei Tang et al.
+- **Key Contribution**: Proposes that task-relevant information in ICL is concentrated in low-dimensional activation subspaces.
+- **Relevance**: Suggests a mechanistic explanation for how "repeated" tasks or geometries might be represented and retrieved efficiently in-context.
+
+### 4. The Lattice Representation Hypothesis (2026)
+- **Authors**: Bojian Xiong
+- **Key Contribution**: Argues that LLMs use linear attribute directions to encode concept lattices.
+- **Relevance**: Provides a theoretical framework for how symbolic names (labels) could be grounded in geometric/latent space.
+
+### 5. Abstract Visual Reasoning with Tangram Shapes (KiloGram) (2022)
+- **Authors**: Anya Ji et al.
+- **Key Contribution**: Large-scale dataset of tangram descriptions and part-level segmentations.
+- **Relevance**: Provides the "novel geometries" and their corresponding verbal "addresses" (names for parts and whole shapes).
+
+## Common Methodologies
+- **Symbolic Grounding**: Using coordinates (SVG, TCE) or domain-specific languages (DSL) to represent geometry.
+- **In-Context Learning (ICL)**: Presenting examples in the prompt to induce task performance without weight updates.
+- **Mechanistic Interpretability**: Analyzing activation subspaces or "induction heads" to understand how ICL works.
+
+## Gaps and Opportunities
+- **Limited Repetition**: Most studies focus on many-shot or zero-shot, but the impact of *limited repetition* of a *novel* geometry is less explored.
+- **Verbal vs. Geometric Addressing**: Can a model transition from coordinate-based addressing to purely verbal addressing once a geometry is "named" in-context?
+
+## Recommendations for Our Experiment
+- **Dataset**: Use the Tangram/KiloGram SVG definitions as "novel geometries".
+- **Baselines**: Compare performance when geometries are referred to by coordinates vs. by assigned names.
+- **Metrics**: Accuracy in identifying parts or properties of the geometry after it has been defined and repeated in-context.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .gemini/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

@@ -1,0 +1,282 @@
+[
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-151",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-171",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-159",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-0",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-116",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-148",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-114",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-133",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-10",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-151",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-171",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-159",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-0",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-116",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-148",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-114",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-133",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-10",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-106",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-151",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-171",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-159",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-0",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-116",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-148",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-114",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-133",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 10,
+    "shape_id": "page1-10",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-106",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-151",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-171",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-159",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-0",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-116",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-148",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-114",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-133",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 20,
+    "shape_id": "page1-10",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  }
+]

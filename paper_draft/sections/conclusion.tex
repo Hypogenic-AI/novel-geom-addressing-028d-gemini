@@ -1,0 +1,6 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this work, we investigated the "addressability threshold" of novel 2D geometries in LLMs. Our experiments with \gpt on the \kilogram dataset demonstrate that \addressing—the mapping of names to coordinates—is achieved perfectly and instantaneously in-context. However, this capability is decoupled from \reasoning, which remains inconsistent and scales slowly with repetition.
+
+Our findings challenge the notion that "learning a geometry" in-context is a monolithic process. Instead, we show that models can operate as perfect symbolic lookup tables while remaining "spatially blind" to the data they retrieve. Future work should explore whether multimodal models, which can bridge the gap between symbolic coordinates and visual renderings, exhibit a more integrated understanding of novel geometries. Additionally, investigating the mechanistic basis of this decoupling could provide insights into how spatial concepts are—or are not—represented in the latent spaces of large-scale transformers.

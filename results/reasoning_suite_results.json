@@ -1,0 +1,1202 @@
+[
+  {
+    "n_shots": 1,
+    "shape_id": "page1-168",
+    "relation": "above",
+    "p1": "back",
+    "p2": "belly",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-168",
+    "relation": "below",
+    "p1": "back",
+    "p2": "belly",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-168",
+    "relation": "left",
+    "p1": "back",
+    "p2": "belly",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-168",
+    "relation": "right",
+    "p1": "back",
+    "p2": "belly",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-0",
+    "relation": "above",
+    "p1": "base",
+    "p2": "seat",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-0",
+    "relation": "below",
+    "p1": "base",
+    "p2": "seat",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-0",
+    "relation": "left",
+    "p1": "base",
+    "p2": "seat",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-0",
+    "relation": "right",
+    "p1": "base",
+    "p2": "seat",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-137",
+    "relation": "above",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-137",
+    "relation": "below",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-137",
+    "relation": "left",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-137",
+    "relation": "right",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-1",
+    "relation": "above",
+    "p1": "body",
+    "p2": "tail",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-1",
+    "relation": "below",
+    "p1": "body",
+    "p2": "tail",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-1",
+    "relation": "left",
+    "p1": "body",
+    "p2": "tail",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-1",
+    "relation": "right",
+    "p1": "body",
+    "p2": "tail",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-116",
+    "relation": "above",
+    "p1": "pump",
+    "p2": "base",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-116",
+    "relation": "below",
+    "p1": "pump",
+    "p2": "base",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-116",
+    "relation": "left",
+    "p1": "pump",
+    "p2": "base",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-116",
+    "relation": "right",
+    "p1": "pump",
+    "p2": "base",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-142",
+    "relation": "above",
+    "p1": "head with neck (can't break it down further)",
+    "p2": "back leg",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-142",
+    "relation": "below",
+    "p1": "head with neck (can't break it down further)",
+    "p2": "back leg",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-142",
+    "relation": "left",
+    "p1": "head with neck (can't break it down further)",
+    "p2": "back leg",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-142",
+    "relation": "right",
+    "p1": "head with neck (can't break it down further)",
+    "p2": "back leg",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-171",
+    "relation": "above",
+    "p1": "wooden base",
+    "p2": "straw covering",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-171",
+    "relation": "below",
+    "p1": "wooden base",
+    "p2": "straw covering",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-171",
+    "relation": "left",
+    "p1": "wooden base",
+    "p2": "straw covering",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-171",
+    "relation": "right",
+    "p1": "wooden base",
+    "p2": "straw covering",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-108",
+    "relation": "above",
+    "p1": "snake 2 body",
+    "p2": "heads",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-108",
+    "relation": "below",
+    "p1": "snake 2 body",
+    "p2": "heads",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-108",
+    "relation": "left",
+    "p1": "snake 2 body",
+    "p2": "heads",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-108",
+    "relation": "right",
+    "p1": "snake 2 body",
+    "p2": "heads",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "relation": "above",
+    "p1": "feet",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "relation": "below",
+    "p1": "feet",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "relation": "left",
+    "p1": "feet",
+    "p2": "body",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "relation": "right",
+    "p1": "feet",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-162",
+    "relation": "above",
+    "p1": "body",
+    "p2": "head",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-162",
+    "relation": "below",
+    "p1": "body",
+    "p2": "head",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-162",
+    "relation": "left",
+    "p1": "body",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-162",
+    "relation": "right",
+    "p1": "body",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-149",
+    "relation": "above",
+    "p1": "tail",
+    "p2": "living area",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-149",
+    "relation": "below",
+    "p1": "tail",
+    "p2": "living area",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-149",
+    "relation": "left",
+    "p1": "tail",
+    "p2": "living area",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-149",
+    "relation": "right",
+    "p1": "tail",
+    "p2": "living area",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-143",
+    "relation": "above",
+    "p1": "coffee table",
+    "p2": "foot rest",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-143",
+    "relation": "below",
+    "p1": "coffee table",
+    "p2": "foot rest",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-143",
+    "relation": "left",
+    "p1": "coffee table",
+    "p2": "foot rest",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-143",
+    "relation": "right",
+    "p1": "coffee table",
+    "p2": "foot rest",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-172",
+    "relation": "above",
+    "p1": "back legs",
+    "p2": "front legs",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-172",
+    "relation": "below",
+    "p1": "back legs",
+    "p2": "front legs",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-172",
+    "relation": "left",
+    "p1": "back legs",
+    "p2": "front legs",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-172",
+    "relation": "right",
+    "p1": "back legs",
+    "p2": "front legs",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-109",
+    "relation": "above",
+    "p1": "wings",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-109",
+    "relation": "below",
+    "p1": "wings",
+    "p2": "head",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-109",
+    "relation": "left",
+    "p1": "wings",
+    "p2": "head",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-109",
+    "relation": "right",
+    "p1": "wings",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-125",
+    "relation": "above",
+    "p1": "peak",
+    "p2": "pinnacle",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-125",
+    "relation": "below",
+    "p1": "peak",
+    "p2": "pinnacle",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-125",
+    "relation": "left",
+    "p1": "peak",
+    "p2": "pinnacle",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-125",
+    "relation": "right",
+    "p1": "peak",
+    "p2": "pinnacle",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-168",
+    "relation": "above",
+    "p1": "belly",
+    "p2": "legs",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-168",
+    "relation": "below",
+    "p1": "belly",
+    "p2": "legs",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-168",
+    "relation": "left",
+    "p1": "belly",
+    "p2": "legs",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-168",
+    "relation": "right",
+    "p1": "belly",
+    "p2": "legs",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-0",
+    "relation": "above",
+    "p1": "backrest",
+    "p2": "base",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-0",
+    "relation": "below",
+    "p1": "backrest",
+    "p2": "base",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-0",
+    "relation": "left",
+    "p1": "backrest",
+    "p2": "base",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-0",
+    "relation": "right",
+    "p1": "backrest",
+    "p2": "base",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-137",
+    "relation": "above",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-137",
+    "relation": "below",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-137",
+    "relation": "left",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-137",
+    "relation": "right",
+    "p1": "base",
+    "p2": "sconce",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-1",
+    "relation": "above",
+    "p1": "head",
+    "p2": "tail",
+    "gt": "Yes",
+    "response": "Yes",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-1",
+    "relation": "below",
+    "p1": "head",
+    "p2": "tail",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-1",
+    "relation": "left",
+    "p1": "head",
+    "p2": "tail",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-1",
+    "relation": "right",
+    "p1": "head",
+    "p2": "tail",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-116",
+    "relation": "above",
+    "p1": "pump",
+    "p2": "roof",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-116",
+    "relation": "below",
+    "p1": "pump",
+    "p2": "roof",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-116",
+    "relation": "left",
+    "p1": "pump",
+    "p2": "roof",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-116",
+    "relation": "right",
+    "p1": "pump",
+    "p2": "roof",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-142",
+    "relation": "above",
+    "p1": "front leg",
+    "p2": "head with neck (can't break it down further)",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-142",
+    "relation": "below",
+    "p1": "front leg",
+    "p2": "head with neck (can't break it down further)",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-142",
+    "relation": "left",
+    "p1": "front leg",
+    "p2": "head with neck (can't break it down further)",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-142",
+    "relation": "right",
+    "p1": "front leg",
+    "p2": "head with neck (can't break it down further)",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-171",
+    "relation": "above",
+    "p1": "straw covering",
+    "p2": "wooden base",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-171",
+    "relation": "below",
+    "p1": "straw covering",
+    "p2": "wooden base",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-171",
+    "relation": "left",
+    "p1": "straw covering",
+    "p2": "wooden base",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-171",
+    "relation": "right",
+    "p1": "straw covering",
+    "p2": "wooden base",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-108",
+    "relation": "above",
+    "p1": "heads",
+    "p2": "snake 2 body",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-108",
+    "relation": "below",
+    "p1": "heads",
+    "p2": "snake 2 body",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-108",
+    "relation": "left",
+    "p1": "heads",
+    "p2": "snake 2 body",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-108",
+    "relation": "right",
+    "p1": "heads",
+    "p2": "snake 2 body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "relation": "above",
+    "p1": "head",
+    "p2": "feet",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "relation": "below",
+    "p1": "head",
+    "p2": "feet",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "relation": "left",
+    "p1": "head",
+    "p2": "feet",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "relation": "right",
+    "p1": "head",
+    "p2": "feet",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-162",
+    "relation": "above",
+    "p1": "head",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-162",
+    "relation": "below",
+    "p1": "head",
+    "p2": "body",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-162",
+    "relation": "left",
+    "p1": "head",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-162",
+    "relation": "right",
+    "p1": "head",
+    "p2": "body",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-149",
+    "relation": "above",
+    "p1": "tail",
+    "p2": "engine area",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-149",
+    "relation": "below",
+    "p1": "tail",
+    "p2": "engine area",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-149",
+    "relation": "left",
+    "p1": "tail",
+    "p2": "engine area",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-149",
+    "relation": "right",
+    "p1": "tail",
+    "p2": "engine area",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-143",
+    "relation": "above",
+    "p1": "foot rest",
+    "p2": "corner seat",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-143",
+    "relation": "below",
+    "p1": "foot rest",
+    "p2": "corner seat",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-143",
+    "relation": "left",
+    "p1": "foot rest",
+    "p2": "corner seat",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-143",
+    "relation": "right",
+    "p1": "foot rest",
+    "p2": "corner seat",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-172",
+    "relation": "above",
+    "p1": "neck",
+    "p2": "back",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-172",
+    "relation": "below",
+    "p1": "neck",
+    "p2": "back",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-172",
+    "relation": "left",
+    "p1": "neck",
+    "p2": "back",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-172",
+    "relation": "right",
+    "p1": "neck",
+    "p2": "back",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-109",
+    "relation": "above",
+    "p1": "ears",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-109",
+    "relation": "below",
+    "p1": "ears",
+    "p2": "head",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-109",
+    "relation": "left",
+    "p1": "ears",
+    "p2": "head",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-109",
+    "relation": "right",
+    "p1": "ears",
+    "p2": "head",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-125",
+    "relation": "above",
+    "p1": "pinnacle",
+    "p2": "peak",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-125",
+    "relation": "below",
+    "p1": "pinnacle",
+    "p2": "peak",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-125",
+    "relation": "left",
+    "p1": "pinnacle",
+    "p2": "peak",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-125",
+    "relation": "right",
+    "p1": "pinnacle",
+    "p2": "peak",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  }
+]

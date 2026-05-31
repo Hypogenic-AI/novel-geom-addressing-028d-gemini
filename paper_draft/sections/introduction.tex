@@ -1,0 +1,20 @@
+\section{Introduction}
+\label{sec:intro}
+
+Large Language Models (LLMs) are increasingly deployed in domains requiring spatial intelligence, from user interface automation to robotic planning. A critical capability for these applications is the ability to learn and reason about novel spatial configurations presented in-context. For instance, a model might be given the coordinate definitions of a new tool or a specific room layout and must subsequently interact with named components of that geometry.
+
+The significance of this research lies in understanding how symbolic representations of geometry, such as \svg coordinate strings, are internalized during in-context learning. Recent studies have demonstrated that LLMs can learn the topology of hidden graphs or 2D lattices through repeated examples~\cite{tang2026concept, xiong2026lattice}. However, a key question remains: does the ability to map a verbal label to a coordinate—which we call \textbf{\addressing}—enable the model to "perceive" the spatial relationships between those coordinates?
+
+Despite the impressive ability of models like \gpt to retrieve exact coordinate strings, there is a clear gap in their ability to perform genuine spatial reasoning. On one hand, the model can act as a perfect lookup table for geometric definitions. On the other hand, it often fails at simple queries like "Is part A above part B?", even when it has just correctly retrieved the coordinates for both parts. This suggests that \addressing and spatial perception may be decoupled in the model's latent space.
+
+In this paper, we examine this decoupling by evaluating \gpt on the \kilogram dataset~\cite{ji2022kilogram}, which contains thousands of unique 2D tangram shapes defined by \svg coordinates. We vary the number of examples ($N$ shots) to identify the "addressability threshold"—the point where symbolic mapping becomes stable—and test whether reaching this threshold triggers a phase transition in \reasoning performance.
+
+Our quantitative evaluation shows that \gpt achieves {\bf 100\% \addressing accuracy} in zero-shot settings, requiring no repetition to map names to complex coordinate strings. However, \reasoning accuracy starts at a mere {\bf 60\%} with one shot and only reaches {\bf 80\%} after 20 shots, showing no sharp phase transition. These findings indicate that while LLMs are exceptional at symbolic retrieval, they lack an intrinsic spatial "eye" for novel geometries learned in-context.
+
+We make the following contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We define and distinguish between {\bf \addressing} and {\bf \reasoning} in the context of in-context learning of 2D geometries.
+    \item We demonstrate that \gpt exhibits perfect \addressing for complex \svg shapes without requiring repetition, challenging the necessity of the "phase transitions" observed in simpler graph-learning tasks.
+    \item We provide empirical evidence for the decoupling of symbolic lookup and spatial perception, showing that \reasoning performance scales much more slowly than \addressing.
+    \item We evaluate the impact of \cotask and novel nomenclature, finding that neither significantly bridges the gap between retrieval and reasoning.
+\end{itemize}

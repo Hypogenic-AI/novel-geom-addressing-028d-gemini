@@ -1,0 +1,152 @@
+[
+  {
+    "n_shots": 1,
+    "shape_id": "page1-13",
+    "p1": "body",
+    "p2": "body with legs",
+    "gt_above": "No",
+    "response": "Yes.",
+    "success": false,
+    "latency": 0.2743251323699951
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-118",
+    "p1": "neck",
+    "p2": "head",
+    "gt_above": "No",
+    "response": "No.",
+    "success": true,
+    "latency": 0.29903721809387207
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-106",
+    "p1": "feet",
+    "p2": "body",
+    "gt_above": "No",
+    "response": "No.",
+    "success": true,
+    "latency": 0.29784154891967773
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-119",
+    "p1": "bowl",
+    "p2": "bottom",
+    "gt_above": "Yes",
+    "response": "Yes.",
+    "success": true,
+    "latency": 0.30279541015625
+  },
+  {
+    "n_shots": 1,
+    "shape_id": "page1-128",
+    "p1": "handle",
+    "p2": "blade",
+    "gt_above": "Yes",
+    "response": "No.",
+    "success": false,
+    "latency": 0.3488471508026123
+  },
+  {
+    "n_shots": 3,
+    "shape_id": "page1-13",
+    "p1": "body",
+    "p2": "body with legs",
+    "gt_above": "No",
+    "response": "Yes.",
+    "success": false,
+    "latency": 0.43621158599853516
+  },
+  {
+    "n_shots": 3,
+    "shape_id": "page1-118",
+    "p1": "neck",
+    "p2": "head",
+    "gt_above": "No",
+    "response": "No.",
+    "success": true,
+    "latency": 0.3289473056793213
+  },
+  {
+    "n_shots": 3,
+    "shape_id": "page1-106",
+    "p1": "feet",
+    "p2": "body",
+    "gt_above": "No",
+    "response": "No.",
+    "success": true,
+    "latency": 0.3218810558319092
+  },
+  {
+    "n_shots": 3,
+    "shape_id": "page1-119",
+    "p1": "bowl",
+    "p2": "bottom",
+    "gt_above": "Yes",
+    "response": "Yes",
+    "success": true,
+    "latency": 0.5188100337982178
+  },
+  {
+    "n_shots": 3,
+    "shape_id": "page1-128",
+    "p1": "handle",
+    "p2": "blade",
+    "gt_above": "Yes",
+    "response": "No.",
+    "success": false,
+    "latency": 0.2948753833770752
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-13",
+    "p1": "body",
+    "p2": "body with legs",
+    "gt_above": "No",
+    "response": "Yes",
+    "success": false,
+    "latency": 0.426255464553833
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-118",
+    "p1": "neck",
+    "p2": "head",
+    "gt_above": "No",
+    "response": "No.",
+    "success": true,
+    "latency": 0.3123021125793457
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-106",
+    "p1": "feet",
+    "p2": "body",
+    "gt_above": "No",
+    "response": "Yes",
+    "success": false,
+    "latency": 0.30698180198669434
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-119",
+    "p1": "bowl",
+    "p2": "bottom",
+    "gt_above": "Yes",
+    "response": "Yes",
+    "success": true,
+    "latency": 0.3712046146392822
+  },
+  {
+    "n_shots": 5,
+    "shape_id": "page1-128",
+    "p1": "handle",
+    "p2": "blade",
+    "gt_above": "Yes",
+    "response": "No.",
+    "success": false,
+    "latency": 0.34461379051208496
+  }
+]

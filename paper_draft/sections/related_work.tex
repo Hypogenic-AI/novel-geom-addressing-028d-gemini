@@ -1,0 +1,14 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{Geometric Reasoning in LLMs.}
+The ability of LLMs to reason about geometry has been a subject of increasing scrutiny. \citet{mouselinos2024beyond} identified a significant "geometric reasoning gap," showing that LLMs struggle with constructive problems and spatial perception even when provided with symbolic descriptions. Our work builds on this by focusing specifically on the \textit{in-context} acquisition of novel, non-primitive geometries, rather than general geometric theorems.
+
+\para{Symbolic Grounding and Tangrams.}
+The use of tangrams as a benchmark for spatial reasoning has a long history. The \kilogram dataset~\cite{ji2022kilogram} provides a rich set of human-described and segment-level defined shapes. More recently, \citet{liu2026tangrampuzzle} introduced \textsc{TangramPuzzle} and the Tangram Coordinate Entity (\textsc{TCE}) framework to evaluate multimodal LLMs. Unlike their work which focuses on visual perception, we investigate whether purely symbolic coordinate data can induce similar spatial understanding through text-only prompting.
+
+\para{In-Context Learning as Concept Learning.}
+Theoretical work by \citet{tang2026concept} suggests that in-context learning (ICL) operates as concept subspace learning, where the model identifies relevant task-specific directions in its latent space. \citet{xiong2026lattice} further propose the "Lattice Representation Hypothesis," arguing that LLMs encode concept lattices linearly. Our study tests these hypotheses in a 2D geometric domain, examining if the "concept" of a shape's layout is successfully formed when its parts are "addressed."
+
+\para{Phase Transitions in ICL.}
+Recent literature (e.g., arXiv:2501.00070) has reported "phase transitions" in ICL, where model performance on structured tasks like graph tracing jumps suddenly after a certain number of repetitions. We specifically look for such transitions in \addressing and \reasoning, finding that the former is instantaneous for high-capacity models like \gpt, while the latter lacks a sharp jump.

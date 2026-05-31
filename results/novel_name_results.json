@@ -1,0 +1,79 @@
+[
+  {
+    "shape_id": "page1-172",
+    "novel_name": "Zark",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-16",
+    "novel_name": "Xylo",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "shape_id": "page1-107",
+    "novel_name": "Quirk",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-14",
+    "novel_name": "Jinx",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-149",
+    "novel_name": "Plonk",
+    "gt": "Yes",
+    "response": "No.",
+    "success": false
+  },
+  {
+    "shape_id": "page1-181",
+    "novel_name": "Zark",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-114",
+    "novel_name": "Bloop",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-171",
+    "novel_name": "Xylo",
+    "gt": "No",
+    "response": "No.",
+    "success": true
+  },
+  {
+    "shape_id": "page1-0",
+    "novel_name": "Quirk",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "shape_id": "page1-178",
+    "novel_name": "Zark",
+    "gt": "No",
+    "response": "Yes.",
+    "success": false
+  },
+  {
+    "shape_id": "page1-150",
+    "novel_name": "Xylo",
+    "gt": "Yes",
+    "response": "Yes.",
+    "success": true
+  }
+]

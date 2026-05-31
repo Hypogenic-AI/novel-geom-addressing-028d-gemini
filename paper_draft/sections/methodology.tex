@@ -1,0 +1,24 @@
+\section{Methodology}
+\label{sec:method}
+
+We aim to measure the "addressability threshold" and its relationship to \reasoning in \gpt. Our approach involves presenting a model with a "Geometry Definition" followed by queries that test either its retrieval of that definition (\addressing) or its understanding of the spatial layout (\reasoning).
+
+\para{Dataset.}
+We use the \kilogram dataset~\cite{ji2022kilogram}, which consists of 1,018 tangram shapes. Each shape is composed of several parts, each defined by a set of 2D coordinates in an \svg-like format. For our experiments, we selected a subset of 20 distinct shapes to ensure variety in complexity and part arrangement.
+
+\para{Experimental Design.}
+We conduct three primary experiments:
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item {\bf Experiment 1: \addressing Accuracy.} We provide a geometry definition consisting of part names and their corresponding coordinates. We then ask: "What are the coordinates of [Part Name]?" We vary the number of examples (shots) $N \in \{0, 1, 3, 5, 10\}$.
+    \item {\bf Experiment 2: \reasoning Accuracy.} Using the same geometry definitions, we ask relative position queries such as "Is [Part A] above [Part B]?" The answers are binary (Yes/No). We vary $N \in \{1, 5, 10, 20\}$ shots.
+    \item {\bf Experiment 3: Control Conditions.} We repeat the \reasoning tasks using (a) novel nonsense names for parts to eliminate semantic priors and (b) Chain-of-Thought (\cotask) prompting to test if explicit reasoning steps improve performance.
+\end{enumerate}
+
+\para{Model and Prompting.}
+All experiments were conducted using \gpt. Prompts were structured to clearly separate the geometry definition from the task instructions. For \addressing, we used a robust extraction pipeline to handle minor formatting variations in the model's output, comparing the extracted coordinates to the ground truth. For \reasoning, we used exact match on the binary response.
+
+\para{Evaluation Metrics.}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item {\bf Addressing Accuracy:} The percentage of queries where the model returned the exact ground truth coordinate string for the requested part.
+    \item {\bf Reasoning Accuracy:} The percentage of correct binary answers to relative position queries.
+\end{itemize}

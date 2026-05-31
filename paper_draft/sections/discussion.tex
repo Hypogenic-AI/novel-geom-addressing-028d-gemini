@@ -1,0 +1,16 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The results of our study highlight a fundamental decoupling between the ability to "name" a coordinate string and the ability to "understand" its spatial implications.
+
+\para{Addressability as a Lookup Table.}
+The 100\% accuracy in Experiment 1 suggests that \gpt treats in-context definitions as a highly efficient lookup table. The model can map arbitrary strings (names) to other arbitrary strings (coordinates) without loss of information. This capability is likely driven by strong induction heads and copy-paste mechanisms within the transformer architecture, which are well-documented in the context of many-shot learning and long-context retrieval.
+
+\para{The Perception Gap.}
+However, this symbolic mapping does not translate into spatial perception. The relatively low accuracy in Experiment 2 (60-80\%) implies that the model cannot "see" where the coordinates are relative to each other. In human cognition, reading coordinates typically involves an implicit visualization or mental rotation process. Our findings suggest that LLMs lack an equivalent "rendering" process in-context. The slow improvement with repetition likely represents the model learning to associate certain numeric patterns (e.g., "higher Y value means 'above'") rather than a holistic understanding of the shape's geometry.
+
+\para{Limitations.}
+Our study has several limitations. First, we focused exclusively on \gpt; smaller models might exhibit different behaviors, including potential phase transitions in \addressing. Second, our coordinate strings are floats, and tokenization could potentially interfere with the model's ability to parse fine-grained numeric differences. Finally, the "Above/Below" task is relatively simple; more complex geometric relationships like "overlapping" or "intersecting" might show even greater decoupling.
+
+\para{Broader Implications.}
+The decoupling of \addressing and perception has significant implications for the design of spatial agents. If an agent is told where an object is (in coordinates), it cannot be assumed that the agent "knows" what that means for its spatial relationship to other objects. This suggests that for tasks requiring deep spatial understanding, purely symbolic coordinate representation in-context may be insufficient, and more explicit grounding—perhaps through visual tokens or specialized geometric embeddings—is necessary.
