@@ -1,0 +1,29 @@
+idea:
+  title: Are repeated novel geometries addressable witout reasoning?
+  domain: artificial_intelligence
+  hypothesis: 'It is unknown whether models that learn 2D geometries in context can
+    be verbally addressed through prompting, especially when there is limited repetition.
+    This research will test if repeated novel geometries are addressable without explicit
+    reasoning.
+
+    '
+  background:
+    description: 'Models learn 2D geometries in context:
+
+      https://arxiv.org/abs/2501.00070
+
+      Are these geometries verbally addressable through prompting? What if there isn''t
+      that much repetition?
+
+      '
+    papers:
+    - description: https://arxiv.org/abs/2501.00070
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/5P9IAdDj4zuAjai4YvFj
+    idea_id: are_repeated_novel_geometries__20260531_020228_2333c495
+    created_at: '2026-05-31T02:02:28.378428'
+    status: submitted
+    github_repo_name: novel-geom-addressing-028d-gemini
+    github_repo_url: https://github.com/Hypogenic-AI/novel-geom-addressing-028d-gemini
